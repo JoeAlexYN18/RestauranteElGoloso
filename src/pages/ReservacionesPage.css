@@ -1,0 +1,315 @@
+.contact-section {
+    padding: 40px;
+    background-color: transparent;
+    margin-bottom: 80px;
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #0097b2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox-label input {
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox-label span {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+/* Estilo específico para los inputs de los términos y condiciones */
+input[type="checkbox"] {
+    width: 15px; /* Ajusta el tamaño de los inputs de checkbox */
+    height: 15px; /* Ajusta el tamaño de los inputs de checkbox */
+}
+
+button.btn-primary {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.reserve-button {
+    background-color: #0097b2;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.reserve-button:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    z-index: 2;
+}
+
+.form-container h2 {
+    color: #0097b2;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.form-row input,
+.form-row select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 70px;
+    resize: both;
+    width: 100%;
+    max-width: 97%;
+}
+
+.form-row.same-line input,
+.form-row.same-line select {
+    width: 70%;
+}
+
+button[type="button"] {
+    padding: 8px 16px;
+    background-color: #0097b2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #007a8c;
+}
+
+.reserve-button-large {
+    width: 100%;
+}
+
+.confirmation-box {
+    background-color: #d4f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-box h3 {
+    font-size: 1.4em;
+    color: #0097b2;
+}
+
+.confirmation-box p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.cancel-reservation-button {
+    background: linear-gradient(90deg, #0097b2, #7ed957);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+}
+
+.cancel-reservation-button:hover {
+    background: linear-gradient(90deg, #fff, #fff);
+    color: #333;
+    transform: scale(1.1);
+    padding: 14px 28px;
+}
+
+.time-picker select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-container.hidden {
+    display: none;
+}
+
+.reservas-confirmadas {
+    margin-top: 20px;
+}
+
+.reservas-confirmadas h2 {
+    color: #0097b2;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.reservas-confirmadas p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.reservas-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.reserva-card {
+    background: linear-gradient(90deg, #0097b2, #7ed957);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reserva-card h3 {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.reserva-card p {
+    font-size: 1.1em;
+    margin: 3px 0;
+}
+
+.reserva-card .cancel-reservation-button {
+    align-self: flex-start;
+}
+
+.time-picker {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.time-picker select {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-row.same-line {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+}
